@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.landing-page {
+  background-image: url("./Assets/Images/Background.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  /* filter: contrast(100%); */
+}
+
+.landing-page > div:nth-child(1) {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.69);
+  top: 0;
+}
+
+.logo > svg {
+  height: 40px;
+  fill: #e50914;
+}
+
+.navbar {
+  padding-top: 25px;
+  display: flex;
+  justify-content: space-around;
+  gap: 600px;
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline;
+}
+
+.landing-text {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.landing-text > div {
+  color: white;
+}
+
+.vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40vw;
+  margin-top: 35px;
+}
+
+.sign-in,
+.get-started {
+  background-color: #e50914;
+  padding: 8px 15px;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+  border: none;
+  font-size: 0.8rem;
+  font-family: Montserrat;
+}
+
+#language {
+  font-size: 0.8rem;
+  padding: 8px 20px;
+  font-weight: 500;
+  font-family: Montserrat;
+  border-radius: 5px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid gray;
+}
+
+#language option {
+  background-color: transparent;
+}
+
+.vertical div:nth-child(1) {
+  font-size: 3.25rem;
+  font-weight: 1000;
+  font-family: Montserrat;
+}
+
+.vertical div:nth-child(2) {
+  font-size: 1.25rem;
+  font-weight: 600;
+  font-family: Montserrat;
+  margin: 20px 0;
+}
+
+.vertical div:nth-child(3) {
+  font-size: 1.4rem;
+  font-weight: 500;
+  font-family: Montserrat;
+  margin: 20px 0;
+}
+
+input[type="email"] {
+  padding: 20px;
+  width: 200px;
+  border-radius: 4px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  margin-right: 10px;
+  transition: all 1s ease-in-out;
+}
+
+.get-started {
+  padding: 15px;
+  width: 150px;
+  font-size: 1rem;
+}
+
+.sign-in:hover {
+  background-color: #c11119;
+}
+
+.red-line {
+  background-color: #da112a;
+  padding: 2px;
+  border: none;
+}
+
+.black {
+  background-color: black;
+  color: white;
+  height: 120vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  /* border: 2px solid  white; */
+  font-family: Montserrat;
+}
+
+.plans-resources {
+  display: flex;
+  justify-content: center;
+  width: 100%; /* Ensure the flex container takes the full width */
+  /* Add any necessary styles */
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+.text-class{
+    margin-top: 100px;
+}
+
+.box {
+  background-color: rgb(86, 24, 51);
+  width: 300px;
+  height: 250px;
+  /* border: 2px soli/d white; */
+  margin: 10px; /* Add margin if needed */
+  border-radius: 20px;
+}
+.box > div {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10px 20px;
+}
+.box:hover{
+    animation: scaling 1s ease-in-out;
+}
+.box > div >div:nth-child(1){
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.box > div >div:nth-child(2){
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.box > div >div:nth-child(2){
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.box > div >div:nth-child(3){
+    font-size: 1rem;
+    font-weight: 600;
+}
+.black h1 {
+  margin-left: 135px;
+}
+.box-hover:hover {
+  background-color: #cb0f64;
+}
+.box1{
+    background-color:#1d172d;
+    height: 270px;
+    padding: 5px;
+}
+@keyframes scaling {
+    0%,100%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.06);
+    }
+}
+.box1> div >div:nth-child(1){
+    font-size: 1.3rem;
+}
+.box1> div >div:nth-child(2){
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #8a8b92;
+}
+.flex-logo{
+    position: relative;
+    align-self: flex-end;
+}
+.FAQ-headline{
+  background-color: black;
+  color: white;
+  font-family: Montserrat;
+  padding-left: 135px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  height: 80vh;
+}
+.FAQ-headline>p
+{
+  margin-bottom:25px;
+
+}
+.faq{
+  /* height: 80vh; */
+  background-color: #2d2d2d;
+  height: 100px;
+  margin-bottom: 10px;
+  width: 60vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center ;
+  padding: 0px 20px;
+  font-weight: 500;
+}
+.faq:hover{
+  background-color: #414141;
+}
+.ready-to-watch{
+  margin-top: 0;
+  padding: 0;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+  gap:10px;
+}
+.ready-to-watch>div:nth-child(1){
+  font-size: 1.3rem;
+  font-family: Montserrat;
+  font-weight: 500;
+}
+.footer-container{
+  color: #b3b3b3;
+  font-family: Montserrat;
+  font-weight: 600;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 135px;
+  gap: 30px;
+  height: 60vh;
+}
+.footer-grid {
+  width: 75vw;
+  /* border: 2px solid white; */
+  display: grid;
+  gap: 13px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  font-size: small;
+  margin-bottom: 30px;
+  }
+.footer-grid div{
+  text-decoration: solid #b3b3b3 underline;
+}
